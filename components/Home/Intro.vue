@@ -26,11 +26,3 @@
     </p>
   </div>
 </template>
-
-<script setup>
-useSeoMeta({
-  title: "Cavin Macwan | Mobile Architect & App Development Expert",
-  description:
-    "Mobile architect specializing in Android, Jetpack Compose & Flutter development. Building high-performance apps with 5+ years experience. Founder of Meticha & tech community mentor"
-});
-</script>
