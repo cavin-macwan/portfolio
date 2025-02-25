@@ -40,8 +40,8 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://cavinmacwan.com',
-    name: 'Cavin Macwan - Jetpack Compose, Flutter, Co-Founder',
-    description: 'I\'m Cavin Macwan, your friendly neighborhood software, product engineer, and designer. I specialize in building mobile apps using Jetpack Compose, Flutter, and other mobile technologies.',
+    name: 'Cavin Macwan – Mobile App Developer | Compose, Flutter & Kotlin Expert',
+    description: 'Explore Jetpack Compose and Flutter insights with Cavin Macwan, Co-Founder of Meticha. Discover mobile app development tips and Kotlin snippets!',
     defaultLocale: 'en',
     
   },
