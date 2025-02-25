@@ -25,9 +25,9 @@
 <script lang="ts" setup>
 const links = [
   {
-    name: "Twitter",
-    url: "https://twitter.com/cavin_1910",
-    icon: "mdi:twitter",
+    name: "Linkedin",
+    url: "https://www.linkedin.com/in/cavin-macwan/",
+    icon: "mdi:linkedin",
   },
   {
     name: "GitHub",
@@ -35,9 +35,9 @@ const links = [
     icon: "mdi:github",
   },
   {
-    name: "Linkedin",
-    url: "https://www.linkedin.com/in/cavin-macwan/",
-    icon: "mdi:linkedin",
+    name: "Twitter",
+    url: "https://twitter.com/cavin_1910",
+    icon: "mdi:twitter",
   }
 ];
 </script>
