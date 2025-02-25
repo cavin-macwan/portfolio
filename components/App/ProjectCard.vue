@@ -18,6 +18,7 @@
       :src="project.thumbnail"
       :ui="{ rounded: 'rounded z-10 relative' }"
       size="md"
+      :imgClass="'object-contain'"
       :alt="project.name"
     />
   </NuxtLink>
