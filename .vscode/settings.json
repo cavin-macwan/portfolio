@@ -5,6 +5,7 @@
     "editor.quickSuggestions": {
         "strings": true
     },
+    "editor.gotoLocation.multipleDefinitions": "goto",
     "tailwindCSS.experimental.configFile": "tailwind.config.ts",
     "tailwindCSS.experimental.classRegex": [
         [

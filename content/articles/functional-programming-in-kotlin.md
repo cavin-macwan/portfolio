@@ -5,4 +5,4 @@ published: 2025/02/25
 slug: "functional-programming-in-kotlin"
 ---
 
-Coming Soon
+Coming soon
