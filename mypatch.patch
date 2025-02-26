@@ -1,0 +1,70 @@
+diff --git a/components/Home/Newsletter.vue b/components/Home/Newsletter.vue
+index fa33f4f..4169a25 100644
+--- a/components/Home/Newsletter.vue
++++ b/components/Home/Newsletter.vue
+@@ -13,14 +13,56 @@
+     <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+       Get notified when I publish something new, and unsubscribe at any time.
+     </p>
+-    <div class="flex items-center gap-3 mt-6">
+-      <UInput
+-        placeholder="Email Address"
+-        icon="i-heroicons-envelope"
+-        class="flex-1"
+-        size="lg"
+-      />
+-      <UButton label="Join &rarr;" size="lg" color="black" />
+-    </div>
++    <form @submit.prevent="subscribeNewsletter" class="flex items-center gap-3 mt-6">
++        <UInput
++          type="email"
++          v-model="email"
++          placeholder="Email Address"
++          icon="i-heroicons-envelope"
++          class="flex-1"
++          size="lg"
++        />
++        <UButton
++          :disabled="loading"
++          type="submit"
++          :label="loading ? 'Joining...' : 'Join →'"
++          size="lg"
++          color="black"
++        />
++    </form>
+   </div>
++  <Toast ref="toastRef" />
+ </template>
++<script setup>
++import Toast from '../content/Toast.vue';
++
++const email = ref("");
++const loading = ref(false);
++const toastRef = ref(null);
++const subscribeNewsletter = async () => {
++  if (!email.value) return;
++
++  loading.value = true;
++  const formData = { email: email.value };
++
++  try {
++    await fetch(
++      "https://script.google.com/macros/s/AKfycbxpCP9QgZkAhVeASqkAQQAvS-Fn1SrXEgHfmRRWWqXMdUAqBSryWSTDiyIlUSkznSo8wQ/exec",
++      {
++        method: "POST",
++        mode: "no-cors",
++        headers: { "Content-Type": "application/json" },
++        body: JSON.stringify(formData),
++      }
++    );
++
++    toastRef.value.showToast("Subscription successful!", "success");
++    email.value = "";
++  } catch (error) {
++    console.error("Error:", error);
++    toastRef.value.showToast("Network error. Please try again.", "error");
++  } finally {
++    loading.value = false;
++  }
++};
++</script>
