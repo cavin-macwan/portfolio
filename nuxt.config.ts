@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxtjs/seo",
     "nuxt-gtag",
+    "@nuxtjs/sitemap",
   ],
   ui: {
     icons: ["heroicons", "lucide"],
@@ -39,17 +40,27 @@ export default defineNuxtConfig({
     },
   },
   site: {
-    url: 'https://cavinmacwan.com',
-    name: 'Cavin Macwan – Mobile App Developer | Compose, Flutter & Kotlin Expert',
-    description: 'Explore Jetpack Compose and Flutter insights with Cavin Macwan, Co-Founder of Meticha. Discover mobile app development tips and Kotlin snippets!',
-    defaultLocale: 'en',
-    
+    url: "https://cavinmacwan.com",
+    name: "Cavin Macwan – Mobile App Developer | Compose, Flutter & Kotlin Expert",
+    description:
+      "Explore Jetpack Compose and Flutter insights with Cavin Macwan, Co-Founder of Meticha. Discover mobile app development tips and Kotlin snippets!",
+    defaultLocale: "en",
+  },
+
+  sitemap: {
+    urls: [
+      {
+        loc: "/favicon.ico",
+        priority: 1,
+        lastmod: new Date().toISOString(),
+      },
+    ],
   },
   runtimeConfig: {
     public: {
       gtag: {
-        id: 'G-Q9P3KGT7EJ'
-      }
-    }
-  }
+        id: "G-Q9P3KGT7EJ",
+      },
+    },
+  },
 });
