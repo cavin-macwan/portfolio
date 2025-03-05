@@ -8,6 +8,8 @@ slug: "master-permission-handling-in-jetpack-compose"
 Hey everyone,  
 Thank you for stopping by my blog. Welcome to my very first post! Today, we're diving into the world of permission handling in Jetpack Compose.
 
+![Jetpack Compose Permission Banner](https://cavinmacwan.com/articles/master-permission-handling-in-jetpack-compose.png)
+
 If you've ever managed permissions in Compose, you know the struggle: endless boilerplate just to request a single permission. And then there's the challenge of handling rationale—especially in location-based apps, where required permissions add even more complexity. It's not just about writing logic in your `ViewModel`; you also have to keep the `UI` in sync. Before you know it, your code spirals out of control ☠️.
 
 I felt this pain firsthand. That’s why I built my own library—to slice through the boilerplate and let developers focus on building great app logic.
