@@ -44,9 +44,9 @@ dependencies {
 }
 ```
 
-# How to implement permisions
+## How to implement permisions
 
-## 1. Add the permissions in the `AndriodManifest.xml`
+## 1. Add the permissions in the `AndroidManifest.xml`
 
 First, you've to add the permissions that you want to ask the user at `AndroidManifest.xml` file. Let's say you want to ask for the permission of recording the audio. Then it might something look like this:
 
