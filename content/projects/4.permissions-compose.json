@@ -1,0 +1,8 @@
+{
+  "name": "Permissions Compose",
+  "url": "https://github.com/meticha/permissions-compose",
+  "description": "A lightweight Android library that simplifies runtime permission management in Jetpack Compose applications.",
+  "thumbnail": "",
+  "status": "ACTIVE",
+  "opensource": true
+}
