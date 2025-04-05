@@ -16,6 +16,8 @@ I felt this pain firsthand. That’s why I built my own library—to slice throu
 
 Managing runtime permissions in Android can be a real headache. From checking manifest entries to displaying permission dialogs and handling lifecycle events, it’s easy to drown in repetitive code. In this tutorial, I’ll show you how to simplify this process using Jetpack Compose and a custom library designed to make permission management effortless.
 
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExejM2cWF4b3F6cW45aG4yYnRuZzhuajY4d21odWQzMzQ3MXVnaDZmMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MpLphYAo2vO4P2Facx/giphy.gif" width="1000"  />
+
 ## What Does This Library Handle?
 
 I built this library from the ground up to cover nearly every aspect of permission handling in Jetpack Compose. Here’s what it brings to the table:
@@ -46,9 +48,9 @@ dependencies {
 }
 ```
 
-## How to implement permisions
+## How to do permission handling
 
-## 1. Add the permissions in the `AndroidManifest.xml`
+## 1. Addding the permissions in the `AndroidManifest.xml`
 
 First, you've to add the permissions that you want to ask the user at `AndroidManifest.xml` file. Let's say you want to ask for the permission of recording the audio. Then it might something look like this:
 
@@ -105,7 +107,7 @@ Since this composable accepts a list, you can provide as many permissions as you
 
 - `permission`: What kind of permission you want to ask to the user
 - `description`: Why do you want the permission
-- `isRequire`: Is this is true, then the user won't be able to do anything until they accept the permission.
+- `isRequire`: If this is true, then the user won't be able to do anything until they accept the permission.
 
 Now when the user clicks on the `Request Permissions` button, we're calling `permissions.requestPermission()` method, which internally takes care of asking permissions, showing rationale when `isRequired` is set to true and checking the permission in the Manifest file.
 
@@ -172,12 +174,14 @@ fun CustomRationaleDialog(
 }
 ```
 
-This kind flexibility allows you to tailor the permission experience to match your app’s style, making it more intuitive for your users.
+This kind of flexibility allows you to tailor the permission experience to match your app’s style, making it more intuitive for your users.
 
 ## Conclusion
 
 Managing runtime permissions in Android doesn’t have to be a painful, repetitive task. By leveraging Jetpack Compose and our custom permission management library, you can streamline the process, reduce boilerplate, and focus on building great features.
 
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHNyajAzeDZobzA2bWE2MWRxZDhpMDU3Z3g5ejVxc3FnaXg3aTVmMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l2JeaFDEUkyXjoULK/giphy.gif" width="1000"  />
+
 Ready to simplify your permission management and reclaim your development time? Check out the [GitHub repository](https://github.com/meticha/permissions-compose) for the demo and full source code.
 
-Contributions and feedback are always welcome! If you have any suggestions or questions, feel free to message me on [LinkedIn](https://www.linkedin.com/in/cavin-macwan/)
+I hope you learned something new from this blog. If you didn't understand any of this part or have any doubts, then you can ask me on my [LinkedIn](https://www.linkedin.com/in/cavin-macwan/) and [Twitter](https://www.twitter.com/cavin_1910/).
