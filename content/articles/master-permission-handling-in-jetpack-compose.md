@@ -184,4 +184,4 @@ Managing runtime permissions in Android doesn’t have to be a painful, repetiti
 
 Ready to simplify your permission management and reclaim your development time? Check out the [GitHub repository](https://github.com/meticha/permissions-compose) for the demo and full source code.
 
-I hope you learned something new from this blog. If you didn't understand any of this part or have any doubts, then you can ask me on my [LinkedIn](https://www.linkedin.com/in/cavin-macwan/) and [Twitter](https://www.twitter.com/cavin_1910/).
+I hope you've learned something new from this blog. If you didn't understand any of this part or have any doubts, then you can ask me on my [LinkedIn](https://www.linkedin.com/in/cavin-macwan/) and [Twitter](https://www.twitter.com/cavin_1910/).
