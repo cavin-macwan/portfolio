@@ -16,6 +16,11 @@ export default defineNuxtConfig({
   ui: {
     icons: ["heroicons", "lucide"],
   },
+  mdc: {
+    highlight: {
+      langs: ['kotlin']
+    }
+  },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {

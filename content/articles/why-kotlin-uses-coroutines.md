@@ -1,7 +1,6 @@
 ---
 title: "Why Kotlin uses Coroutines"
-description: "Discover why Kotlin introduced Coroutines over traditional threads, callbacks, and Rx.
-This article breaks down the design decisions, pitfalls of older approaches, and the power of structured concurrency."
+description: "Discover why Kotlin introduced Coroutines over traditional threads, callbacks, and Rx. This article breaks down the design decisions, pitfalls of older approaches, and the power of structured concurrency."
 published: 2025/04/06
 slug: "why-kotlin-uses-coroutines"
 ---
