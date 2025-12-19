@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-4">FIND ME ON</h2>
+    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-4">
+      FIND ME ON
+    </h2>
     <div class="space-y-5">
       <NuxtLink
         v-for="link in links"
@@ -36,8 +38,8 @@ const links = [
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/cavin_1910",
+    url: "https://twitter.com/cavin_dev",
     icon: "mdi:twitter",
-  }
+  },
 ];
 </script>
