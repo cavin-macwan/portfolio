@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Master Permission Handling in Jetpack Compose</title>
+  <desc id="desc">An editorial cover with a Kotlin permission state code sample in a dark editor.</desc>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#625877" stroke-opacity=".1"/></pattern>
+    <clipPath id="editor"><rect x="575" y="147" width="950" height="606" rx="13"/></clipPath>
+  </defs>
+  <rect width="1600" height="900" fill="#eee9e2"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <path d="M0 800H1600M82 0V900" stroke="#6e6472" stroke-opacity=".27"/>
+  <text x="120" y="91" fill="#564b64" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" letter-spacing="5">CAVIN MACWAN / FIELD NOTES</text>
+  <text x="121" y="254" fill="#211f20" font-family="Arial,Helvetica,sans-serif" font-size="80" font-weight="700" letter-spacing="-6">ask once.</text>
+  <text x="121" y="341" fill="#51339b" font-family="Georgia,serif" font-size="87" font-style="italic" letter-spacing="-4">handle well.</text>
+  <path d="M123 402H491" stroke="#8d8098" stroke-width="2"/>
+  <text x="123" y="450" fill="#655a6e" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" letter-spacing="3">COMPOSE / ANDROID</text>
+  <rect x="123" y="562" width="224" height="74" rx="37" fill="#dfe98a" stroke="#211f20" stroke-width="2"/>
+  <circle cx="166" cy="599" r="17" fill="#51339b"/>
+  <path d="m157 599 7 7 14-16" fill="none" stroke="#f7f4e9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="208" y="607" fill="#211f20" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="2">GRANTED</text>
+  <rect x="575" y="147" width="950" height="606" rx="13" fill="#1e1b23" stroke="#655b70" stroke-width="2"/>
+  <g clip-path="url(#editor)">
+    <rect x="576" y="148" width="948" height="78" fill="#312b37"/>
+    <circle cx="612" cy="186" r="7" fill="#ec7d70"/><circle cx="638" cy="186" r="7" fill="#efc676"/><circle cx="664" cy="186" r="7" fill="#a8cd8b"/>
+    <text x="727" y="194" fill="#d7cfdf" font-family="Menlo,Consolas,monospace" font-size="24">PermissionScreen.kt</text>
+    <text x="1359" y="194" fill="#89818d" font-family="Menlo,Consolas,monospace" font-size="18">KOTLIN</text>
+    <rect x="590" y="275" width="916" height="51" fill="#30273e"/>
+    <g fill="#77717d" font-family="Menlo,Consolas,monospace" font-size="22" text-anchor="end">
+      <text x="632" y="309">01</text><text x="632" y="359">02</text><text x="632" y="409">03</text><text x="632" y="459">04</text><text x="632" y="509">05</text><text x="632" y="559">06</text><text x="632" y="609">07</text><text x="632" y="659">08</text>
+    </g>
+    <g font-family="Menlo,Consolas,monospace" font-size="24" xml:space="preserve">
+      <text x="686" y="309" fill="#d9c5fb">@Composable</text>
+      <text x="686" y="359"><tspan fill="#d9c5fb">fun </tspan><tspan fill="#f1edf2">PermissionScreen</tspan><tspan fill="#b9afc1">() {</tspan></text>
+      <text x="686" y="409"><tspan fill="#b9afc1">  val </tspan><tspan fill="#f1edf2">permissions</tspan><tspan fill="#b9afc1"> =</tspan></text>
+      <text x="686" y="459"><tspan fill="#e1f182">    rememberAppPermissionState</tspan><tspan fill="#b9afc1">(</tspan></text>
+      <text x="686" y="509"><tspan fill="#b9afc1">      permissions = </tspan><tspan fill="#e1f182">listOf</tspan><tspan fill="#b9afc1">(</tspan></text>
+      <text x="686" y="559"><tspan fill="#e1f182">        AppPermission</tspan><tspan fill="#b9afc1">(</tspan></text>
+      <text x="686" y="609"><tspan fill="#b9afc1">          permission = </tspan><tspan fill="#efbd92">RECORD_AUDIO</tspan></text>
+      <text x="686" y="659"><tspan fill="#b9afc1">        )</tspan></text>
+    </g>
+    <rect x="576" y="711" width="948" height="42" fill="#29242e"/>
+    <text x="607" y="739" fill="#9f96a8" font-family="Menlo,Consolas,monospace" font-size="18">main  ·  Jetpack Compose  ·  UTF-8</text>
+  </g>
+  <text x="120" y="847" fill="#706777" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="4">02 / ENGINEERING</text>
+  <text x="1480" y="847" text-anchor="end" fill="#706777" font-family="Menlo,Consolas,monospace" font-size="20">&lt;/&gt;</text>
+</svg>

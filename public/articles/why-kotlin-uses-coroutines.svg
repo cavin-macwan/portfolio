@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Why Kotlin uses Coroutines</title>
+  <desc id="desc">An editorial cover with a Kotlin coroutine code sample in a dark editor.</desc>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#a89bbd" stroke-opacity=".08"/></pattern>
+    <clipPath id="editor"><rect x="575" y="147" width="950" height="606" rx="13"/></clipPath>
+  </defs>
+  <rect width="1600" height="900" fill="#211f20"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <path d="M0 800H1600M82 0V900" stroke="#afa5bd" stroke-opacity=".24"/>
+  <text x="120" y="91" fill="#d9d1e6" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" letter-spacing="5">CAVIN MACWAN / FIELD NOTES</text>
+  <text x="121" y="254" fill="#e6ddf0" font-family="Arial,Helvetica,sans-serif" font-size="80" font-weight="700" letter-spacing="-6">less syntax.</text>
+  <text x="121" y="341" fill="#d9c5fb" font-family="Georgia,serif" font-size="87" font-style="italic" letter-spacing="-4">more flow.</text>
+  <path d="M123 402H491" stroke="#9a89b0" stroke-width="2"/>
+  <text x="123" y="450" fill="#aaa2b2" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" letter-spacing="3">KOTLIN / CONCURRENCY</text>
+  <path d="M123 634C210 573 287 685 365 615S459 569 513 605" fill="none" stroke="#d9c5fb" stroke-width="5"/>
+  <path d="M123 665C212 607 278 706 361 653S468 631 514 651" fill="none" stroke="#8d79cd" stroke-width="3"/>
+  <circle cx="364" cy="615" r="9" fill="#e1f182"/>
+  <rect x="575" y="147" width="950" height="606" rx="13" fill="#17161b" stroke="#655b70" stroke-width="2"/>
+  <g clip-path="url(#editor)">
+    <rect x="576" y="148" width="948" height="78" fill="#2e2a34"/>
+    <circle cx="612" cy="186" r="7" fill="#ec7d70"/><circle cx="638" cy="186" r="7" fill="#efc676"/><circle cx="664" cy="186" r="7" fill="#a8cd8b"/>
+    <text x="727" y="194" fill="#d7cfdf" font-family="Menlo,Consolas,monospace" font-size="24">PostItem.kt</text>
+    <text x="1359" y="194" fill="#89818d" font-family="Menlo,Consolas,monospace" font-size="18">KOTLIN</text>
+    <rect x="590" y="336" width="916" height="54" fill="#30273e"/>
+    <g fill="#77717d" font-family="Menlo,Consolas,monospace" font-size="23" text-anchor="end">
+      <text x="632" y="291">01</text><text x="632" y="357">02</text><text x="632" y="423">03</text><text x="632" y="489">04</text><text x="632" y="555">05</text><text x="632" y="621">06</text><text x="632" y="687">07</text>
+    </g>
+    <g font-family="Menlo,Consolas,monospace" font-size="27" xml:space="preserve">
+      <text x="686" y="291" fill="#8d8992">// familiar code, asynchronous work</text>
+      <text x="686" y="357"><tspan fill="#d9c5fb">suspend fun </tspan><tspan fill="#f1edf2">postItem</tspan><tspan fill="#b9afc1">(item: Item) {</tspan></text>
+      <text x="686" y="423"><tspan fill="#b9afc1">  val </tspan><tspan fill="#f1edf2">token</tspan><tspan fill="#b9afc1"> = </tspan><tspan fill="#e1f182">requestToken</tspan><tspan fill="#b9afc1">()</tspan></text>
+      <text x="686" y="489"><tspan fill="#b9afc1">  val </tspan><tspan fill="#f1edf2">post</tspan><tspan fill="#b9afc1"> = </tspan><tspan fill="#e1f182">createPost</tspan><tspan fill="#b9afc1">(token, item)</tspan></text>
+      <text x="686" y="555"><tspan fill="#e1f182">  processPost</tspan><tspan fill="#b9afc1">(post)</tspan></text>
+      <text x="686" y="621" fill="#b9afc1">}</text>
+    </g>
+    <rect x="576" y="711" width="948" height="42" fill="#25222b"/>
+    <text x="607" y="739" fill="#9f96a8" font-family="Menlo,Consolas,monospace" font-size="18">main  ·  6 lines  ·  UTF-8</text>
+  </g>
+  <text x="120" y="847" fill="#a89fb0" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="4">01 / ENGINEERING</text>
+  <text x="1480" y="847" text-anchor="end" fill="#a89fb0" font-family="Menlo,Consolas,monospace" font-size="20">&lt;/&gt;</text>
+</svg>
