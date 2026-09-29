@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: "Articles", description: "Thoughts on building products, Android, and the craft of software by Cavin Macwan.", alternates: { canonical: "/articles" }, openGraph: { title: "Articles — Cavin Macwan", description: "Thoughts on building products, Android, and the craft of software by Cavin Macwan.", url: "/articles", images: ["/hero-portrait.jpg"] } };
+export const metadata: Metadata = { title: "Articles", description: "Thoughts on building products, Android, and the craft of software by Cavin Macwan.", alternates: { canonical: "/articles" }, openGraph: { title: "Articles — Cavin Macwan", description: "Thoughts on building products, Android, and the craft of software by Cavin Macwan.", url: "/articles", images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Cavin Macwan — Making digital feel human" }] } };
 
 const articles = [
   { title: "Why Kotlin uses Coroutines", description: "Why did Kotlin choose coroutines over threads, callbacks, and promises? A closer look at the tradeoffs behind the design.", date: "APRIL 06, 2025", slug: "why-kotlin-uses-coroutines", image: "/articles/why-kotlin-uses-coroutines.svg", number: "01" },
