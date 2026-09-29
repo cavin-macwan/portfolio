@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://cavinmacwan.com"),
   title: { default: "Cavin Macwan — Developer & Product Builder", template: "%s — Cavin Macwan" },
   description: "Cavin Macwan is a developer and co-founder at Meticha, building thoughtful iOS and Android apps with SwiftUI, Kotlin, and Jetpack Compose.",
-  openGraph: { title: "Cavin Macwan — Making digital feel human", description: "Thoughtful products, useful tools, and digital experiences built with care.", url: "/", siteName: "Cavin Macwan", images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Cavin Macwan — Making digital feel human" }] },
-  twitter: { card: "summary_large_image", creator: "@cavin_dev", images: [{ url: "/og-image.png", alt: "Cavin Macwan — Making digital feel human" }] },
+  openGraph: { title: "Cavin Macwan - Making digital feel human", description: "Thoughtful products, useful tools, and digital experiences built with care.", url: "/", siteName: "Cavin Macwan", images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Cavin Macwan - Making digital feel human" }] },
+  twitter: { card: "summary_large_image", creator: "@cavin_dev", images: [{ url: "/og-image.png", alt: "Cavin Macwan - Making digital feel human" }] },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
