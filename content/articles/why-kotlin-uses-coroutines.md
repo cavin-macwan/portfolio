@@ -5,7 +5,7 @@ published: 2025/04/06
 slug: "why-kotlin-uses-coroutines"
 ---
 
-![Abstract illustration of flowing coroutine paths](/articles/why-kotlin-uses-coroutines.svg)
+![Kotlin coroutine code snippet in an editorial cover](/articles/why-kotlin-uses-coroutines.svg)
 
 You might have been using **Coroutines** for asynchronous programming in Kotlin for a long time, but have you ever wondered why JetBrains decided to introduce Coroutines instead of relying on plain `async/await` like other languages? Or why they chose Coroutines when `RxJava` and `Threads` were already available? 🤔
 

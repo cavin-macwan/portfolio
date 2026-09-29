@@ -9,9 +9,10 @@ const serif = Playfair_Display({ variable: "--font-serif", subsets: ["latin"], s
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cavinmacwan.com"),
-  title: { default: "Cavin Macwan — Making digital feel human", template: "%s — Cavin Macwan" },
-  description: "Cavin Macwan is a co-founder at Meticha who builds thoughtful products, useful tools, and delightful digital experiences.",
-  openGraph: { title: "Cavin Macwan — Making digital feel human", description: "Thoughtful products, useful tools, and digital experiences built with care.", images: ["/avatar.jpeg"] },
+  title: { default: "Cavin Macwan — Developer & Product Builder", template: "%s — Cavin Macwan" },
+  description: "Cavin Macwan is a developer and co-founder at Meticha, building thoughtful iOS and Android apps with SwiftUI, Kotlin, and Jetpack Compose.",
+  openGraph: { title: "Cavin Macwan — Making digital feel human", description: "Thoughtful products, useful tools, and digital experiences built with care.", url: "/", siteName: "Cavin Macwan", images: ["/hero-portrait.jpg"] },
+  twitter: { card: "summary_large_image", creator: "@cavin_dev", images: ["/hero-portrait.jpg"] },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

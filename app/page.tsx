@@ -1,5 +1,8 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 const projects = [
   { number: "01", name: "Oren", type: "iOS app / SwiftUI", description: "A calm reading companion that turns small sessions into a lasting habit.", image: "/projects/oren-app-icon.png", href: "https://www.getoren.app/", theme: "blue" },
@@ -13,6 +16,7 @@ const articles = [
 
 export default function Home() {
   return <main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Person", name: "Cavin Macwan", url: "https://cavinmacwan.com", image: "https://cavinmacwan.com/hero-portrait.jpg", sameAs: ["https://github.com/cavin-macwan", "https://www.linkedin.com/in/cavin-macwan/", "https://twitter.com/cavin_dev"], jobTitle: "Co-Founder", worksFor: { "@type": "Organization", name: "Meticha", url: "https://meticha.com" } }).replace(/</g, "\\u003c") }} />
     <section className="hero" id="top">
       <div className="hero-intro wrap"><span className="eyebrow">CAVIN MACWAN <span className="eyebrow-line" /> BUILDER BY NATURE</span><span className="hero-side-note">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
       <div className="hero-main wrap"><div className="hero-copy"><h1>Making digital<br /><em>feel</em> human<span className="period">.</span></h1><p>I turn curious ideas into thoughtful products, useful tools, and experiences people love to use.</p><a className="round-link" href="#work">EXPLORE MY WORK <span aria-hidden="true">↗</span></a></div><div className="portrait-composition"><div className="portrait-card"><Image src="/hero-portrait.jpg" alt="Portrait of Cavin Macwan" fill priority sizes="(max-width: 800px) 72vw, 390px" /></div><span className="portrait-label">HELLO, I’M CAVIN. <span aria-hidden="true">✳</span></span><span className="portrait-caption">DESIGN MINDED<br />CODE DRIVEN</span></div></div>

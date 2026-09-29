@@ -8,7 +8,7 @@ slug: "master-permission-handling-in-jetpack-compose"
 Hey everyone,  
 Thank you for stopping by my blog. Welcome to my very first post! Today, we're diving into the world of permission handling in Jetpack Compose.
 
-![Abstract illustration of a granted permission](/articles/master-permission-handling-in-jetpack-compose.svg)
+![Jetpack Compose permission code snippet in an editorial cover](/articles/master-permission-handling-in-jetpack-compose.svg)
 
 If you've ever managed permissions in Compose, you know the struggle: endless boilerplate just to request a single permission. And then there's the challenge of handling rationale—especially in location-based apps, where required permissions add even more complexity. It's not just about writing logic in your `ViewModel`; you also have to keep the `UI` in sync. Before you know it, your code spirals out of control ☠️.
 

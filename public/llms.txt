@@ -1,0 +1,20 @@
+# Cavin Macwan
+
+> Cavin Macwan is a developer and co-founder of Meticha. He builds thoughtful iOS and Android apps, open-source tools, and digital products.
+
+This portfolio features selected work and articles on software development. Contact: cavin@meticha.com.
+
+## Portfolio
+
+- [Home](https://cavinmacwan.com/): About Cavin, his approach to building products, and selected work.
+- [Articles](https://cavinmacwan.com/articles): Technical writing by Cavin.
+
+## Selected work
+
+- [Oren](https://www.getoren.app/): A SwiftUI reading companion for building a reading habit.
+- [Permissions Compose](https://github.com/meticha/permissions-compose): An Android library for permission handling in Jetpack Compose.
+
+## Articles
+
+- [Why Kotlin uses Coroutines](https://cavinmacwan.com/articles/why-kotlin-uses-coroutines): The design choices behind Kotlin coroutines and structured concurrency.
+- [Master Permission Handling in Jetpack Compose](https://cavinmacwan.com/articles/master-permission-handling-in-jetpack-compose): A practical approach to Android runtime permissions in Compose.
