@@ -61,3 +61,10 @@ em{font-family:var(--font-serif),Georgia,serif;font-weight:400}
 .article-row:hover .article-row-image img{transform:scale(1.045)}
 
 @media(prefers-reduced-motion:reduce){.motion-ready [data-reveal]{opacity:1!important;transform:none!important}}
+
+/* Static print texture sits behind content so type, code, and imagery stay sharp. */
+.hero,.build-section,.writing-section,.site-footer{position:relative;isolation:isolate}
+.hero::before,.build-section::before,.writing-section::before,.site-footer::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:url("/grain.svg") repeat;opacity:.28;mix-blend-mode:multiply}
+.site-footer::before{mix-blend-mode:screen}
+.hero>.wrap,.build-section>.wrap,.writing-section>.wrap,.site-footer>.wrap{position:relative;z-index:1}
+.oren-stage,.code-stage{background-image:radial-gradient(#231d3424 .7px,transparent .7px),url("/grain.svg");background-size:8px 8px,128px 128px;background-blend-mode:normal,soft-light}
