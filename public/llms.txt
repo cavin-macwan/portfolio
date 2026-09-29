@@ -11,7 +11,7 @@ This portfolio features selected work and articles on software development. Cont
 
 ## Selected work
 
-- [Oren](https://www.getoren.app/): A SwiftUI reading companion for building a reading habit.
+- [Oren](https://www.getoren.app/): A reading companion for building a reading habit.
 - [Permissions Compose](https://github.com/meticha/permissions-compose): An Android library for permission handling in Jetpack Compose.
 
 ## Articles
