@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cavin’s portfolio
 
-## Getting Started
+Next.js App Router portfolio with articles, Google Analytics, and scroll animations.
 
-First, run the development server:
+## Development
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+```sh
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. Run `pnpm lint` and `pnpm build` before submitting changes. Use `pnpm start` to serve the production build.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+app/
+  layout.tsx             Shared layout and site metadata
+  page.tsx               Home page
+  globals.css            Site styles
+  scroll-motion.tsx      Browser animations
+  articles/
+    data.ts              Shared article details and preview copy
+    page.tsx             Article index
+    [slug]/page.tsx       Article loading and route metadata
+  components/
+    articles/            Article cards, rows, and post view
+    home/                Hero, work, about, and writing sections
+    google-analytics.tsx Google tag
+    json-ld.tsx          Structured data rendering
+    site-header.tsx      Main navigation
+    site-footer.tsx      Contact and social links
+content/articles/        Article Markdown
+public/                  Images and other static assets
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To add an article, add its Markdown and cover images, update `app/articles/data.ts`, and add its URL to `app/sitemap.xml`. The home page, article index, static routes, and article metadata use the shared article data.
